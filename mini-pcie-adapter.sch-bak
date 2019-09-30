@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mpcie:miniPCIe J3
+U 1 1 5D90B965
+P 5800 3800
+F 0 "J3" H 5800 5337 60  0000 C CNN
+F 1 "miniPCIe" H 5800 5231 60  0000 C CNN
+F 2 "mpcie:mini-PCIe_H1_Half" H 6900 1700 60  0001 C CNN
+F 3 "https://pcisig.com/specifications/pciexpress/base" H 6900 1700 60  0001 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x22_MountingPin J1
+U 1 1 5D90FADC
+P 1700 3600
+F 0 "J1" H 1622 4817 50  0000 C CNN
+F 1 "Conn_01x22_MountingPin" H 1622 4726 50  0000 C CNN
+F 2 "molex-easy-on-545xxx:Molex-Easy-On-54548-2271-P0.5" H 1700 3600 50  0001 C CNN
+F 3 "~" H 1700 3600 50  0001 C CNN
+	1    1700 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic_MountingPin:Conn_01x24_MountingPin J2
+U 1 1 5D912329
+P 2350 3600
+F 0 "J2" H 2272 4917 50  0000 C CNN
+F 1 "Conn_01x24_MountingPin" H 2272 4826 50  0000 C CNN
+F 2 "molex-easy-on-545xxx:Molex-Easy-On-54548-2471-P0.5" H 2350 3600 50  0001 C CNN
+F 3 "~" H 2350 3600 50  0001 C CNN
+	1    2350 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2600 1900 2600
+Wire Wire Line
+	1900 2700 2550 2700
+Wire Wire Line
+	1900 2800 2550 2800
+Wire Wire Line
+	1900 2900 2550 2900
+Wire Wire Line
+	1900 3000 2550 3000
+Wire Wire Line
+	1900 3100 2550 3100
+Wire Wire Line
+	1900 3200 2550 3200
+Wire Wire Line
+	1900 3300 2550 3300
+Wire Wire Line
+	1900 3400 2550 3400
+Wire Wire Line
+	1900 3500 2550 3500
+Wire Wire Line
+	1900 3600 2550 3600
+Wire Wire Line
+	2550 3700 1900 3700
+Wire Wire Line
+	1900 3800 2550 3800
+Wire Wire Line
+	1900 3900 2550 3900
+Wire Wire Line
+	1900 4000 2550 4000
+Wire Wire Line
+	1900 4100 2550 4100
+Wire Wire Line
+	1900 4200 2550 4200
+Wire Wire Line
+	1900 4300 2550 4300
+Wire Wire Line
+	1900 4400 2550 4400
+Wire Wire Line
+	1900 4500 2550 4500
+Wire Wire Line
+	1900 4600 2550 4600
+$Comp
+L power:GND #PWR0101
+U 1 1 5D91A76D
+P 2350 5250
+F 0 "#PWR0101" H 2350 5000 50  0001 C CNN
+F 1 "GND" H 2355 5077 50  0000 C CNN
+F 2 "" H 2350 5250 50  0001 C CNN
+F 3 "" H 2350 5250 50  0001 C CNN
+	1    2350 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5250 2350 5150
+Wire Wire Line
+	1700 4900 1700 5150
+Wire Wire Line
+	1700 5150 2350 5150
+Connection ~ 2350 5150
+Wire Wire Line
+	2350 5150 2350 5000
+Wire Wire Line
+	2550 4800 2650 4800
+Wire Wire Line
+	2650 4800 2650 5150
+Wire Wire Line
+	2650 5150 2350 5150
+Wire Wire Line
+	2550 2500 3250 2500
+Wire Wire Line
+	6500 3550 7300 3550
+Text Label 7300 3550 2    50   ~ 0
+~W_DISABLE
+Wire Wire Line
+	5100 2850 4400 2850
+Text Label 4400 2850 0    50   ~ 0
+~CLKREQ
+Text Label 7300 3650 2    50   ~ 0
+~PERST
+Wire Wire Line
+	7300 3650 6500 3650
+Wire Wire Line
+	6500 4050 7300 4050
+Text Label 7300 4050 2    50   ~ 0
+SMB_CLK
+Wire Wire Line
+	6500 4150 7300 4150
+Text Label 7300 4150 2    50   ~ 0
+SMB_DATA
+Text Label 4400 3050 0    50   ~ 0
+REF_CLK-
+Wire Wire Line
+	4400 3050 5100 3050
+Text Label 4400 3150 0    50   ~ 0
+REF_CLK+
+Wire Wire Line
+	4400 3150 5100 3150
+Text Label 4400 3750 0    50   ~ 0
+PER0-
+Text Label 4400 3850 0    50   ~ 0
+PER0+
+Wire Wire Line
+	4400 3850 5100 3850
+Wire Wire Line
+	4400 3750 5100 3750
+Text Label 4400 4150 0    50   ~ 0
+PET0-
+Wire Wire Line
+	4400 4150 5100 4150
+Text Label 4400 4250 0    50   ~ 0
+PET0+
+Wire Wire Line
+	4400 4250 5100 4250
+Wire Wire Line
+	6500 4750 7300 4750
+Text Label 7300 4750 2    50   ~ 0
+~LED_WLAN
+Wire Wire Line
+	2550 2800 3100 2800
+Text Label 3100 2800 2    50   ~ 0
+~CLKREQ
+Wire Wire Line
+	3250 5150 2650 5150
+Connection ~ 2650 5150
+Wire Wire Line
+	2550 2900 3250 2900
+Wire Wire Line
+	2550 3000 3100 3000
+Connection ~ 2550 2800
+Text Label 3100 3000 2    50   ~ 0
+REF_CLK-
+Wire Wire Line
+	3100 3100 2550 3100
+Connection ~ 2550 2900
+Text Label 3100 3100 2    50   ~ 0
+REF_CLK+
+Wire Wire Line
+	2550 3200 3250 3200
+Connection ~ 2550 3000
+Wire Wire Line
+	2550 3300 3100 3300
+Connection ~ 2550 3100
+Text Label 3100 3300 2    50   ~ 0
+~W_DISABLE
+Wire Wire Line
+	2550 3400 3250 3400
+Connection ~ 2550 3200
+Connection ~ 3250 3200
+Wire Wire Line
+	3250 3200 3250 3400
+Text Label 3100 3500 2    50   ~ 0
+~PERST
+Wire Wire Line
+	3100 3500 2550 3500
+Connection ~ 2550 3300
+Wire Wire Line
+	2550 3600 3250 3600
+Connection ~ 2550 3400
+Connection ~ 3250 3400
+Wire Wire Line
+	3250 3400 3250 3600
+Wire Wire Line
+	2550 3700 3100 3700
+Connection ~ 2550 3500
+Text Label 3100 3700 2    50   ~ 0
+PER0-
+Wire Wire Line
+	2550 3800 3100 3800
+Connection ~ 2550 3600
+Text Label 3100 3800 2    50   ~ 0
+PER0+
+Wire Wire Line
+	2550 3900 3250 3900
+Connection ~ 2550 3700
+Wire Wire Line
+	2550 4000 3100 4000
+Text Label 3100 4000 2    50   ~ 0
+PET0-
+Wire Wire Line
+	2550 4100 3100 4100
+Text Label 3100 4100 2    50   ~ 0
+PET0+
+Connection ~ 2550 3800
+Connection ~ 2550 3900
+Wire Wire Line
+	2550 4200 3250 4200
+Connection ~ 2550 4000
+Wire Wire Line
+	5100 2550 4400 2550
+Text Label 4400 2550 0    50   ~ 0
+~WAKE
+Connection ~ 2550 4100
+Connection ~ 2550 4200
+Connection ~ 3250 2900
+Connection ~ 3250 3600
+Connection ~ 3250 3900
+Connection ~ 3250 4200
+Wire Wire Line
+	3250 4200 3250 4400
+Wire Wire Line
+	3250 2500 3250 2700
+Wire Wire Line
+	3250 2900 3250 3200
+Wire Wire Line
+	3250 3600 3250 3900
+Wire Wire Line
+	3250 3900 3250 4200
+Wire Wire Line
+	2550 2700 3250 2700
+Connection ~ 2550 2700
+Connection ~ 3250 2700
+Wire Wire Line
+	3250 2700 3250 2900
+Wire Wire Line
+	2550 2600 3100 2600
+Connection ~ 2550 2600
+Text Label 3100 2600 2    50   ~ 0
+~WAKE
+Wire Wire Line
+	2550 4300 3100 4300
+Connection ~ 2550 4300
+Text Label 3100 4300 2    50   ~ 0
+SMB_CLK
+Wire Wire Line
+	2550 4400 3250 4400
+Connection ~ 2550 4400
+Connection ~ 3250 4400
+Wire Wire Line
+	3250 4400 3250 4600
+Wire Wire Line
+	2550 4500 3100 4500
+Connection ~ 2550 4500
+Text Label 3100 4500 2    50   ~ 0
+SMB_DATA
+Wire Wire Line
+	2550 4600 3250 4600
+Connection ~ 2550 4600
+Connection ~ 3250 4600
+Wire Wire Line
+	3250 4600 3250 5150
+Wire Wire Line
+	1900 4700 2550 4700
+Wire Wire Line
+	2550 4700 3100 4700
+Connection ~ 2550 4700
+Text Label 3100 4700 2    50   ~ 0
+LED_WLAN
+$EndSCHEMATC

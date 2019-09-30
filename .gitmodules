@@ -1,0 +1,3 @@
+[submodule "lib/kicad-mini-pci-e"]
+	path = lib/kicad-mini-pci-e
+	url = https://github.com/drbild/kicad-mini-pci-e

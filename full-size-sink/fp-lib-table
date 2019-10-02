@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name mpcie)(type KiCad)(uri ${KIPRJMOD}/lib/kicad-mini-pci-e/mpcie.pretty)(options "")(descr ""))
+  (lib (name molex-easy-on-545xxx)(type KiCad)(uri ${KIPRJMOD}/lib/molex-easy-on-545xxx.pretty)(options "")(descr ""))
+  (lib (name amphenol-m.2)(type KiCad)(uri ${KIPRJMOD}/amphenol-m.2.pretty)(options "")(descr ""))
+  (lib (name Connector_BoardToBoard)(type KiCad)(uri ${KIPRJMOD}/Connector_BoardToBoard.pretty)(options "")(descr ""))
+  (lib (name lib)(type KiCad)(uri ${KIPRJMOD}/lib)(options "")(descr ""))
+  (lib (name mechanical)(type KiCad)(uri ${KIPRJMOD}/mechanical.pretty)(options "")(descr ""))
+)

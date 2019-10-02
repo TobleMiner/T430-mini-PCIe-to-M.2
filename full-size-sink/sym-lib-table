@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mpcie)(type Legacy)(uri ${KIPRJMOD}/lib/kicad-mini-pci-e/mpcie.lib)(options "")(descr ""))
+  (lib (name M.2-NGFF)(type Legacy)(uri ${KIPRJMOD}/lib/M.2-NGFF.lib)(options "")(descr ""))
+)

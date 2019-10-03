@@ -1029,4 +1029,85 @@ F 3 "~" H 9500 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9300 5300
+$Comp
+L oscillator:DSC60XXB U?
+U 1 1 5DFD9B7B
+P 7900 5350
+F 0 "U?" H 7900 5715 50  0000 C CNN
+F 1 "DSC60XXB" H 7900 5624 50  0000 C CNN
+F 2 "microchip-lga:LGA4-1.6x1.2" H 7900 5300 50  0001 C CNN
+F 3 "" H 7900 5300 50  0001 C CNN
+	1    7900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFDAF34
+P 8750 5500
+F 0 "C?" H 8865 5546 50  0000 L CNN
+F 1 "100 nC" H 8865 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8788 5350 50  0001 C CNN
+F 3 "~" H 8750 5500 50  0001 C CNN
+	1    8750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DFDB73B
+P 8750 5100
+F 0 "#PWR?" H 8750 4950 50  0001 C CNN
+F 1 "+3V3" H 8765 5273 50  0000 C CNN
+F 2 "" H 8750 5100 50  0001 C CNN
+F 3 "" H 8750 5100 50  0001 C CNN
+	1    8750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5250 8300 5250
+Wire Wire Line
+	8750 5250 8750 5100
+Wire Wire Line
+	8750 5250 8750 5350
+Connection ~ 8750 5250
+Wire Wire Line
+	8750 5650 8750 5750
+Wire Wire Line
+	8750 5750 7400 5750
+Wire Wire Line
+	7400 5750 7400 5450
+Wire Wire Line
+	7400 5450 7550 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5E015C96
+P 7400 5850
+F 0 "#PWR?" H 7400 5600 50  0001 C CNN
+F 1 "GND" H 7405 5677 50  0000 C CNN
+F 2 "" H 7400 5850 50  0001 C CNN
+F 3 "" H 7400 5850 50  0001 C CNN
+	1    7400 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5850 7400 5750
+Connection ~ 7400 5750
+Wire Wire Line
+	8250 5450 8600 5450
+Text Label 8600 5450 2    50   ~ 0
+SUSCLK
+Wire Wire Line
+	7550 5250 7400 5250
+Wire Wire Line
+	7400 5250 7400 4900
+Wire Wire Line
+	7400 4900 8300 4900
+Wire Wire Line
+	8300 4900 8300 5250
+Connection ~ 8300 5250
+Wire Wire Line
+	8300 5250 8750 5250
+Wire Wire Line
+	7850 2900 8600 2900
+Text Label 8600 2900 2    50   ~ 0
+SUSCLK
 $EndSCHEMATC
